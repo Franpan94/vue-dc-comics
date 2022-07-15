@@ -1,67 +1,48 @@
 <template>
-  <div class="d-flex justify-around pb-2">
-    <img src="../assets/img/dc-logo.png" alt="dc-logo" class="width" />
-
+  <div class="bg d-flex justify-around pb-2">
     <ul class="d-flex text">
-      <li v-for="(voice, index) in voices" :key="index"><a :href="voice.url">{{ voice.text }}</a> </li>
+      <li v-for="(linkimg, index) in linkimgs" :key="index">
+        <img :src="linkimg.img" alt="dc">
+        <a :href="linkimg.url">{{ linkimg.text }}</a>
+      </li>
     </ul>
   </div>
 </template>
 
 <script>
 export default {
-  name: "MainHeader",
+  name: "MainProducts",
 
   data: function () {
     return {
-      voices: [
+      linkimgs: [
         {
-          text: "characters",
+          text: "digital comics",
+          img:"../assets/img/buy-comics-digital-comics.png",
           url: "#",
         },
 
         {
-          text: "comics",
+          text: "dc merchandise",
+          img:"buy-comics-merchandise.png",
           url: "#",
         },
 
         {
-          text: "movies",
+          text: "subscription",
+          img:"buy-comics-subscriptions.png",
           url: "#",
         },
 
         {
-          text: "tv",
+          text: "comic shop locator",
+          img:"buy-comics-shop-locator.png",
           url: "#",
         },
 
         {
-          text: "games",
-          url: "#",
-        },
-
-        {
-          text: "collectibles",
-          url: "#",
-        },
-
-        {
-          text: "videos",
-          url: "#",
-        },
-
-        {
-          text: "fans",
-          url: "#",
-        },
-
-        {
-          text: "news",
-          url: "#",
-        },
-
-        {
-          text: "shop",
+          text: "dc power visa",
+          img: "buy-dc-power-visa.svg",
           url: "#",
         },
       ],
@@ -71,8 +52,38 @@ export default {
 </script>
 
 <style>
-.bg{
-    background-color: rgb(2, 130, 249);
-    
+.bg {
+  background-color: rgb(2, 130, 249);
+}
+
+.d-flex {
+  display: flex;
+}
+
+li {
+  padding: 20px;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.justify-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.width {
+  width: 80px;
+  height: 80px;
+  padding-top: 20px;
+}
+
+.pb-2 {
+  padding-bottom: 20px;
 }
 </style>
