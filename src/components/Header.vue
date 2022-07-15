@@ -3,7 +3,7 @@
     <img src="../assets/img/dc-logo.png" alt="dc-logo" class="width" />
 
     <ul class="d-flex text">
-      <li v-for="(voice, index) in voices" :key="index">{{ voice.text }}</li>
+      <li v-for="(voice, index) in voices" :key="index"><a :href="voice.url">{{ voice.text }}</a> </li>
     </ul>
   </div>
 </template>
@@ -83,9 +83,13 @@ export default {
 li {
   padding: 20px;
   list-style: none;
-  cursor: pointer;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+  color: black;
 
   &:hover {
     color: rgb(2, 130, 249);
