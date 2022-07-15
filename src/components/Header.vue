@@ -1,10 +1,9 @@
 <template>
   <div class="d-flex justify-around pb-2">
     <img src="../assets/img/dc-logo.png" alt="dc-logo" class="width" />
-    
+
     <ul class="d-flex text">
-      <li v-for="(voice,index) in voices"
-      :key="index">{{ voice.text }}</li>
+      <li v-for="(voice, index) in voices" :key="index">{{ voice.text }}</li>
     </ul>
   </div>
 </template>
@@ -13,64 +12,62 @@
 export default {
   name: "MainHeader",
 
-  data: function(){
-    return{
-        voices: [
-            {
-                text: 'characters',
-                url: '#'
-            },
+  data: function () {
+    return {
+      voices: [
+        {
+          text: "characters",
+          url: "#",
+        },
 
-            {
-                text: 'comics',
-                url: '#'
-            },
+        {
+          text: "comics",
+          url: "#",
+        },
 
-            {
-                text: 'movies',
-                url: '#'
-            },
+        {
+          text: "movies",
+          url: "#",
+        },
 
-            {
-                text: 'tv',
-                url: '#'
-            },
+        {
+          text: "tv",
+          url: "#",
+        },
 
-            {
-                text: 'games',
-                url: '#'
-            },
+        {
+          text: "games",
+          url: "#",
+        },
 
-            {
-                text: 'collectibles',
-                url: '#'
-            },
+        {
+          text: "collectibles",
+          url: "#",
+        },
 
-            {
-                text: 'videos',
-                url: '#'
-            },
+        {
+          text: "videos",
+          url: "#",
+        },
 
-            {
-                text: 'fans',
-                url: '#'
-            },
+        {
+          text: "fans",
+          url: "#",
+        },
 
-            {
-                text: 'news',
-                url: '#'
-            },
+        {
+          text: "news",
+          url: "#",
+        },
 
-            {
-                text: 'shop',
-                url: '#'
-            },
-        ]
-    }
-},
-
-
-}
+        {
+          text: "shop",
+          url: "#",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style lang = 'scss' scoped>
@@ -83,30 +80,30 @@ export default {
   display: flex;
 }
 
-li{
-    padding: 20px;
-    list-style: none;
-    cursor: pointer;
-    text-transform: uppercase;
+li {
+  padding: 20px;
+  list-style: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
 
-    &:hover{
-        color: rgb(2, 130, 249);
-    }
+  &:hover {
+    color: rgb(2, 130, 249);
+  }
 }
 
-.justify-around{
-    display: flex;
-    justify-content: space-around;
+.justify-around {
+  display: flex;
+  justify-content: space-around;
 }
 
-.width{
-    width: 80px;
-    height: 80px;
-    padding-top: 20px;
+.width {
+  width: 80px;
+  height: 80px;
+  padding-top: 20px;
 }
 
-.pb-2{
-    padding-bottom: 20px;
+.pb-2 {
+  padding-bottom: 20px;
 }
-
 </style>
