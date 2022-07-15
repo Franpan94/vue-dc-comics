@@ -59,10 +59,9 @@ export default {
 };
 </script>
 
-<style>
+<style lang = 'scss' scoped>
 .bg {
   background-color: rgb(2, 130, 249);
-  height: 200px;
 }
 
 .d-flex {

@@ -1,9 +1,5 @@
 <template>
-  <div class="bg pl-110 pt-50">
-    <div class="bg-img justify-end">
-        <div class="bg-logo"></div>
-    </div>
-  </div>
+  <div class="bg pl-110 pt-50"></div>
 </template>
 
 <script>
