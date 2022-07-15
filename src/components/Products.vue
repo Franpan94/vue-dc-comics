@@ -1,18 +1,15 @@
 <template>
   <div>
-       main
+    products
   </div>
 </template>
 
 <script>
 export default {
-    name: 'SuperMain',
+     name: 'MainProducts',
 }
-
-
 </script>
 
-<style lang = 'scss' scoped>
-
+<style>
 
 </style>

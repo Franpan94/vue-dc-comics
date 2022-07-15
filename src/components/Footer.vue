@@ -8,6 +8,8 @@
 export default {
     name: 'MainFooter',
 }
+
+
 </script>
 
 <style lang = 'scss' scoped>
