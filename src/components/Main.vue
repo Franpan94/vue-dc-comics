@@ -1,29 +1,22 @@
 <template>
-  <div class="bg pl-110 pt-50"></div>
+ <section>
+    <div>
+
+    </div>
+ </section>
 </template>
 
 <script>
 export default {
-    name: 'SuperMain',
+
 }
-
-
 </script>
 
-<style lang = 'scss' scoped>
+<style>
 .bg {
-  background-image: url("../assets/img/jumbotron.jpg");
-  height: 100vh;
+ 
+  height: 50vh;
   background-size: cover;
   background-position: center;
 }
-
-.pl-110{
-  padding-left: 110px;
-}
-
-.pt-50{
-  padding-top: 50px;
-}
-
 </style>
