@@ -2,7 +2,7 @@
   <div class="bg d-flex justify-around pb-2">
     <ul class="d-flex text">
       <li v-for="(linkimg, index) in linkimgs" :key="index">
-        <img :src="linkimage(linkimg)" alt="dc">
+        <img :src="require(`../assets/img/${linkimg.img}`)" :alt="linkimg.text">
         <a :href="linkimg.url">{{ linkimg.text }}</a>
       </li>
     </ul>
@@ -48,14 +48,6 @@ export default {
       ],
     };
   },
-
-  methods: {
-    linkimage: function(element){
-       
-     return '../assets/' + 'img/' + element.img;
-
-    }
-  }
 };
 </script>
 
