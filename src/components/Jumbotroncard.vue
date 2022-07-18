@@ -1,11 +1,8 @@
 <template>
-
-     <div class="width">
+   <div class="width">
        <img :src="thumburl" :alt="serie" class="widthimg">
        <h4>{{ serie }}</h4>
-  
-  </div>
-  
+   </div>
 </template>
 
 <script>
@@ -26,13 +23,8 @@ export default {
     width: calc(100% / 6);
   }
 
-  .container{
-    width: 70%;
-    margin: auto;
-  }
-
    .widthimg{
-     width: 150px;
+     height: 200px;
    }
 
    

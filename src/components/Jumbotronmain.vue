@@ -123,8 +123,6 @@ export default {
 .d-flex{
     display: flex;
     flex-wrap: wrap;
-    width: 70%;
-    margin: auto;
 }
 
 </style>
