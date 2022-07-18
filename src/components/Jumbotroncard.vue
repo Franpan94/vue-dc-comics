@@ -18,7 +18,6 @@ export default {
 
 <style lang = 'scss' scoped>
   .width{
-   
    color: white;
    width: calc(100% / 6);
    margin: auto;

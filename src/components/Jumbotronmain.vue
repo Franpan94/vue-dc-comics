@@ -1,5 +1,5 @@
 <template>
-  <div class="bg d-flex">
+  <div class="bg d-flex position-relative">
     <Jumbotroncard
       v-for="(album, index) in albums"
       :key="index"
@@ -8,7 +8,7 @@
       :serie="album.series"
       :currentype="album.type"
     />
-    <div>Current series</div>
+    <div class="bg-series position-absolute cursor">Load More</div>
   </div>
 </template>
 
@@ -16,13 +16,13 @@
 import Jumbotroncard from "./Jumbotroncard.vue";
 
 export default {
-    name: "MainJumbotron",
+  name: "MainJumbotron",
 
-    components: {
-       Jumbotroncard,
-    },
+  components: {
+    Jumbotroncard,
+  },
 
-    data: function () {
+  data: function () {
     return {
       albums: [
         {
@@ -116,16 +116,41 @@ export default {
 </script>
 
 <style lang = 'scss' scoped>
-.bg{
-    background-color: rgb(28, 28, 28);
-    height: 80vh;
+.bg {
+  background-color: rgb(28, 28, 28);
+  height: 100vh;
 }
 
-.d-flex{
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 6rem;
-    padding-top: 20px;
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 6rem;
+  padding-top: 30px;
+}
+
+.bg-series{
+  background-color: rgb(2, 130, 249);
+  display: inline-block;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+.position-relative{
+  position: relative;
+}
+
+.position-absolute{
+  position: absolute;
+       position: absolute;
+       left: 50%;
+       bottom: -10px;
+       transform: translate(-50% , -50%);
+}
+
+.cursor{
+  cursor: pointer;
 }
 
 </style>

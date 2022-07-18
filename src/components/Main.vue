@@ -38,84 +38,84 @@ export default {
     return {
       linkone: [
         {
-          link: "digital comics",
+          link: "Characters",
           url: "#",
         },
 
         {
-          link: "digital comics",
+          link: "Comics",
           url: "#",
         },
 
         {
-          link: "digital comics",
+          link: "Movies",
           url: "#",
         },
 
         {
-          link: "digital comics",
+          link: "TV",
           url: "#",
         },
 
         {
-          link: "digital comics",
+          link: "games",
           url: "#",
         },
 
         {
-          link: "digital comics",
+          link: "videos",
           url: "#",
         },
 
         {
-          link: "digital comics",
+          link: "news",
           url: "#",
         },
       ],
 
       linktwo: [
         {
-          link: "digital comics",
+          link: "Shop DC",
           url: "#",
         },
 
         {
-          link: "digital comics",
+          link: "Shop DC Collectibles",
           url: "#",
         },
 
         {
-          link: "digital comics",
+          link: "Terms of Use",
           url: "#",
         },
 
         {
-          link: "digital comics",
+          link: "Privacy policy (New)",
           url: "#",
         },
 
         {
-          link: "digital comics",
+          link: "Ad Choices",
           url: "#",
         },
 
         {
-          link: "digital comics",
+          link: "Advertising",
           url: "#",
         },
 
         {
-          link: "digital comics",
+          link: "Jobs",
           url: "#",
         },
 
         {
-          link: "digital comics",
+          link: "Subscriptions",
           url: "#",
         },
 
         {
-          link: "digital comics",
+          link: "Talent Workshops",
           url: "#",
         },
       ],
@@ -127,34 +127,34 @@ export default {
         },
 
         {
-          link: "digital comics",
+          link: "CPSC Certificates",
           url: "#",
         },
 
         {
-          link: "digital comics",
+          link: "Ratings",
           url: "#",
         },
 
         {
-          link: "digital comics",
+          link: "Shop help",
           url: "#",
         },
 
         {
-          link: "digital comics",
+          link: "Contact Us",
           url: "#",
         },
       ],
 
       linkfour: [
         {
-          link: "digital comics",
+          link: "DC",
           url: "#",
         },
 
         {
-          link: "digital comics",
+          link: "MAD Magazine",
           url: "#",
         },
       ],
