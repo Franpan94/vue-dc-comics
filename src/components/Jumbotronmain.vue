@@ -8,6 +8,7 @@
       :serie="album.series"
       :currentype="album.type"
     />
+    <div>Current series</div>
   </div>
 </template>
 
@@ -123,6 +124,8 @@ export default {
 .d-flex{
     display: flex;
     flex-wrap: wrap;
+    padding-left: 6rem;
+    padding-top: 20px;
 }
 
 </style>

@@ -18,9 +18,10 @@ export default {
 
 <style lang = 'scss' scoped>
   .width{
-   padding-top: 20px;
-    color: white;
-    width: calc(100% / 6);
+   
+   color: white;
+   width: calc(100% / 6);
+   margin: auto;
   }
 
    .widthimg{
