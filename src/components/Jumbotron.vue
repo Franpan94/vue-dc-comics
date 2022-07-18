@@ -3,8 +3,14 @@
 </template>
 
 <script>
+import Jumbotronncard from './components/Jumbotronncard.vue'
+
 export default {
     name: 'MainJumbotron',
+
+    components: {
+      Jumbotroncard
+    }
 }
 
 
@@ -13,9 +19,9 @@ export default {
 <style lang = 'scss' scoped>
 .bg {
   background-image: url("../assets/img/jumbotron.jpg");
-  height: 100vh;
+  height: 40vh;
   background-size: cover;
-  background-position: center;
+ 
 }
 
 .pl-110{

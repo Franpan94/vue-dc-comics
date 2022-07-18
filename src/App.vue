@@ -3,7 +3,7 @@
     <Header />
     <Jumbotron />
     <Products />
-    <Main />
+    <Main /> 
     <Footer/>
   </div>
 </template>

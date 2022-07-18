@@ -1,8 +1,8 @@
 <template>
   <div class="bg d-flex justify-around pb-2">
     <ul class="d-flex text">
-      <li v-for="(linkimg, index) in linkimgs" :key="index">
-        <img :src="require(`../assets/img/${linkimg.img}`)" :alt="linkimg.text">
+      <li v-for="(linkimg, index) in linkimgs" :key="index" class="padding-5">
+        <img :src="require(`../assets/img/${linkimg.img}`)" :alt="linkimg.text" class="widthimg vertical-align padding-5">
         <a :href="linkimg.url">{{ linkimg.text }}</a>
       </li>
     </ul>
@@ -83,7 +83,22 @@ a{
   padding-top: 20px;
 }
 
+.widthimg{
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.vertical-align{
+  vertical-align: middle;
+}
+
 .pb-2 {
   padding-bottom: 20px;
+}
+
+.padding-5{
+  padding: 5px;
 }
 </style>
