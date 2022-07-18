@@ -1,5 +1,11 @@
 <template>
-  <div></div>
+
+     <div class="width">
+       <img :src="thumburl" :alt="serie" class="widthimg">
+       <h4>{{ serie }}</h4>
+  
+  </div>
+  
 </template>
 
 <script>
@@ -14,4 +20,20 @@ export default {
 </script>
 
 <style lang = 'scss' scoped>
+  .width{
+   padding-top: 20px;
+    color: white;
+    width: calc(100% / 6);
+  }
+
+  .container{
+    width: 70%;
+    margin: auto;
+  }
+
+   .widthimg{
+     width: 150px;
+   }
+
+   
 </style>

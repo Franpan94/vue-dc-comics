@@ -16,7 +16,7 @@ import Jumbotronmain from './components/Jumbotronmain.vue'
 import Products from './components/Products.vue'
 import Main from './components/Main.vue'
 import Footer from './components/Footer.vue'
-import Jumbotronmain from './components/Jumbotronmain.vue'
+
 
 
 export default {

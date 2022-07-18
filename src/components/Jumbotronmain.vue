@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg d-flex">
     <Jumbotroncard
       v-for="(album, index) in albums"
       :key="index"
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Jumbotroncard from "./components/Jumbotroncard.vue";
+import Jumbotroncard from "./Jumbotroncard.vue";
 
 export default {
     name: "MainJumbotron",
@@ -115,4 +115,16 @@ export default {
 </script>
 
 <style lang = 'scss' scoped>
+.bg{
+    background-color: rgb(28, 28, 28);
+    height: 80vh;
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+}
+
 </style>

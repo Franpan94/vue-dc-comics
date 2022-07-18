@@ -7,10 +7,6 @@
 
 export default {
   name: "Jumbotron",
-
-  components: {
-    Jumbotroncard,
-  },
 };
 </script>
 
